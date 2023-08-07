@@ -39,7 +39,7 @@ class DynThresh:
             scale *= math.pow(self.step / max, self.sched_val)
         elif mode == "Power Down":
             scale *= 1.0 - math.pow(self.step / max, self.sched_val)
-        elif mode == "Binomial Minimum:
+        elif mode == "Binomial Minimum":
             scale *= math.pow(((self.step / max) - 0.5), self.sched_val) + 1 - math.pow(0.5, self.sched_val)
         elif mode == "Binomial Maximum":
             scale *= 1 - (math.pow(0.5, self.sched_val) + math.pow(((self.step / max) - 0.5), self.sched_val))
