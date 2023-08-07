@@ -20,8 +20,8 @@ except Exception as e:
     print(f"\n\n======\nError! UniPC sampler support failed to load! Is your WebUI up to date?\n(Error: {e})\n======")
 
 ######################### Data values #########################
-VALID_MODES = ["Constant", "Linear Down", "Cosine Down", "Half Cosine Down", "Linear Up", "Cosine Up", "Half Cosine Up", "Power Up", "Power Down", "Linear Repeating", "Cosine Repeating", "Sawtooth"]
-MODES_WITH_VALUE = ["Power Up", "Power Down", "Linear Repeating", "Cosine Repeating", "Sawtooth"]
+VALID_MODES = ["Constant", "Linear Down", "Cosine Down", "Half Cosine Down", "Linear Up", "Cosine Up", "Half Cosine Up", "Power Up", "Power Down", "Binomial Minimum", "Binomial Maximum", "Linear Repeating", "Cosine Repeating", "Sawtooth"]
+MODES_WITH_VALUE = ["Power Up", "Power Down", "Binomial Minimum", "Binomial Maximum", "Linear Repeating", "Cosine Repeating", "Sawtooth"]
 
 ######################### Script class entrypoint #########################
 class Script(scripts.Script):
